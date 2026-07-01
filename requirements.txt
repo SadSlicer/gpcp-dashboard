@@ -1,0 +1,13 @@
+streamlit>=1.40
+yfinance>=0.2.40
+plotly>=5.20
+openpyxl>=3.1
+pandas>=2.0
+pdfplumber>=0.10        # ETF factsheet parsing (compositions_scraper)
+reportlab>=4.0          # monthly PDF report (pro._generate_pdf_report)
+
+# SAAS deployment (Streamlit Cloud + Supabase)
+supabase>=2.5
+psycopg2-binary>=2.9
+bcrypt>=4.1
+python-dotenv>=1.0

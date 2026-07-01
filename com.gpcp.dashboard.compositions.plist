@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd job: refresh ETF sector + geo compositions from official issuer
+  factsheets on the 15th of each month at 09:00 Europe/Paris.
+  Installed to ~/Library/LaunchAgents/ by install_launchd.sh (%ROOT% substituted).
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gpcp.dashboard.compositions</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>%ROOT%/.venv/bin/python</string>
+        <string>%ROOT%/monthly_compositions_update.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>%ROOT%</string>
+
+    <!-- 15th of every month at 09:00 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Day</key>
+        <integer>15</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>%ROOT%/compositions_update.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>%ROOT%/compositions_update.stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>TZ</key>
+        <string>Europe/Paris</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+    </dict>
+</dict>
+</plist>
