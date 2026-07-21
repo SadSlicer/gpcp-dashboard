@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd job: runs daily_update.py every weekday at 18:00 local time
+  (≈30 min after XETRA close at 17:30 Paris time).
+
+  Installed to ~/Library/LaunchAgents/com.gpcp.dashboard.daily.plist
+  by install_launchd.sh — that script substitutes %ROOT% with the
+  absolute path to this dashboard directory.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gpcp.dashboard.daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>%ROOT%/.venv/bin/python</string>
+        <string>%ROOT%/daily_update.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>%ROOT%</string>
+
+    <!-- 18:00 every weekday (Mon=1 … Fri=5). On weekends the job is silent
+         anyway because Yahoo's last trade date will already be saved. -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Weekday</key><integer>3</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Weekday</key><integer>4</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+        <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+    </array>
+
+    <!-- If the Mac is asleep or off at 18:00, run as soon as it wakes -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Re-run any missed schedule when the Mac wakes back up -->
+    <key>StartCalendarIntervalRunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>%ROOT%/daily_update.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>%ROOT%/daily_update.stderr.log</string>
+
+    <!-- Ensure timezone is correct for the schedule above -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>TZ</key>
+        <string>Europe/Paris</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+    </dict>
+</dict>
+</plist>

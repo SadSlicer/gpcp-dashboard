@@ -1,0 +1,54 @@
+# Streamlit's NATIVE theme — the load-bearing half of the design system.
+#
+# WHY IT MATTERS: st.dataframe / st.data_editor render on a CANVAS
+# (glide-data-grid). CSS cannot reach inside them, so their colours come ONLY
+# from this file. If this palette and theme.py disagree, you get a white grid
+# on a near-black page.
+#
+# FOLLOWS THE OS, SWITCHABLE: both [theme.light] and [theme.dark] are defined,
+# so Streamlit renders the visitor's OS preference on first load and lets them
+# override it from the app's ⋮ → Settings menu. `base = "light"` is only the
+# fallback when the preference is indeterminate. That native resolution repaints
+# BOTH the dataframe canvas AND theme.py's CSS (theme.py emits the palette for
+# st.context.theme.type; Plotly reads the same). Every value below has a token
+# of the same name in theme.py — keep the two files in sync.
+
+[theme]
+base                           = "light"
+font                           = "sans serif"
+baseRadius                     = "4px"
+
+[theme.light]
+primaryColor                   = "#0F2547"  # BRAND navy
+backgroundColor                = "#F4F7FA"  # BG_DEEP
+secondaryBackgroundColor       = "#FFFFFF"  # SURFACE_1
+textColor                      = "#0B1220"  # TEXT_PRIMARY
+borderColor                    = "#E2E8F0"  # BORDER_1
+linkColor                      = "#0369A1"  # INFO
+dataframeHeaderBackgroundColor = "#F7FAFC"  # SURFACE_2
+dataframeBorderColor           = "#E2E8F0"  # BORDER_1
+codeBackgroundColor            = "#F7FAFC"
+showWidgetBorder               = true
+
+[theme.dark]
+# Mid steel blue, NOT the light BRAND tint: Streamlit paints multiselect tags
+# and primary buttons with this colour and puts WHITE text on them. A near-white
+# primary gave white-on-#C9D8EC (~1.6:1, unreadable). This one clears 5:1.
+primaryColor                   = "#3D6FA8"
+backgroundColor                = "#0A0E14"  # BG_DEEP
+secondaryBackgroundColor       = "#121821"  # SURFACE_1
+textColor                      = "#E9EEF5"  # TEXT_PRIMARY
+borderColor                    = "#232D3B"  # BORDER_1
+linkColor                      = "#7FA8D9"  # INFO
+dataframeHeaderBackgroundColor = "#171F2A"  # SURFACE_2
+dataframeBorderColor           = "#232D3B"  # BORDER_1
+codeBackgroundColor            = "#171F2A"
+showWidgetBorder               = true
+
+[server]
+headless = true
+port = 8501
+runOnSave = true
+
+[browser]
+gatherUsageStats = false

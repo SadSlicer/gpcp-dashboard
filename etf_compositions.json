@@ -1,0 +1,365 @@
+{
+  "S&P 500": {
+    "isin": "FR0011871128",
+    "ticker": "PSP5.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0011871128",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "USA": 100.0
+    },
+    "sector": {
+      "Tech": 37.94,
+      "Financials": 11.26,
+      "Communication": 10.59,
+      "Consumer Disc.": 9.86,
+      "Healthcare": 8.39,
+      "Industrials": 8.35,
+      "Consumer Staples": 4.65,
+      "Energy": 3.17,
+      "Utilities": 2.12,
+      "Materials": 1.84,
+      "Real Estate": 1.83
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/cdf277bf86c294c7ec6a420d18e372cf_405045/MR_FR_fr_FR0011871128_YES_2026-05-31.pdf"
+  },
+  "NASDAQ": {
+    "isin": "FR0011871110",
+    "ticker": "PUST.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0011871110",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "USA": 94.39,
+      "Ireland": 2.0,
+      "Netherlands": 1.54,
+      "UK": 0.84,
+      "Canada": 0.75,
+      "Other": 0.48
+    },
+    "sector": {
+      "Tech": 60.43,
+      "Communication": 12.32,
+      "Consumer Disc.": 10.82,
+      "Consumer Staples": 6.44,
+      "Healthcare": 3.64,
+      "Industrials": 3.49,
+      "Utilities": 1.18,
+      "Materials": 1.04,
+      "Energy": 0.47,
+      "Financials": 0.17
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/01e0c66501f2d5017644bced2d61d8d2_402797/MR_FR_fr_FR0011871110_YES_2026-06-30.pdf"
+  },
+  "Russel 2000": {
+    "isin": "LU1681038672",
+    "ticker": "RS2K.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=LU1681038672",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "USA": 100.0
+    },
+    "sector": {
+      "Industrials": 19.65,
+      "Tech": 18.53,
+      "Healthcare": 16.04,
+      "Financials": 15.8,
+      "Consumer Disc.": 7.66,
+      "Energy": 5.61,
+      "Real Estate": 5.08,
+      "Materials": 4.69,
+      "Utilities": 2.73,
+      "Communication": 2.59,
+      "Consumer Staples": 1.62
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/8c9aa7432f37f69b3d7dff71fe9d625a_466711/MR_FR_fr_LU1681038672_RES_2026-05-31.pdf"
+  },
+  "Stoxx 600": {
+    "isin": "FR0011550193",
+    "ticker": "ETZ.PA",
+    "issuer": "BNP Paribas",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0011550193",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "France": 13.78,
+      "Germany": 12.82,
+      "Netherlands": 9.98,
+      "Italy": 5.32,
+      "Sweden": 4.7,
+      "USA": 4.28,
+      "Belgium": 1.53,
+      "Austria": 0.66,
+      "China": 0.36,
+      "Other": 46.57
+    },
+    "sector": {
+      "Financials": 24.95,
+      "Industrials": 19.29,
+      "Healthcare": 12.66,
+      "Tech": 9.49,
+      "Consumer Staples": 8.05,
+      "Consumer Disc.": 6.75,
+      "Materials": 5.37,
+      "Utilities": 4.88,
+      "Energy": 4.8,
+      "Communication": 2.67,
+      "Other": 1.09
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/e64c1b08a7f6e3fc24cfc6da72e07595_193016/MR_FR_fr_FR0011550193_YES_2026-06-30.pdf"
+  },
+  "IBEX": {
+    "isin": "FR0010655746",
+    "ticker": "CS1.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0010655746",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "Spain": 88.31,
+      "United Kingdom": 2.49,
+      "Luxembourg": 1.07,
+      "Other": 8.13
+    },
+    "sector": {
+      "Financials": 40.73,
+      "Fournisseur": 19.39,
+      "Consumer Disc.": 10.65,
+      "Industrials": 7.28,
+      "Other": 21.95
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "JustETF exposure tables"
+  },
+  "TOPIX": {
+    "isin": "FR0013411980",
+    "ticker": "PTPXE.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0013411980",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "Japan": 100.0
+    },
+    "sector": {
+      "Industrials": 25.2,
+      "Tech": 18.33,
+      "Financials": 17.31,
+      "Consumer Disc.": 14.18,
+      "Communication": 6.0,
+      "Materials": 5.6,
+      "Healthcare": 4.98,
+      "Consumer Staples": 4.65,
+      "Real Estate": 1.72,
+      "Utilities": 1.19,
+      "Energy": 0.84
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/38a6d1a7aa98a3a3274786af06b926da_571837/MR_FR_fr_FR0013411980_RES_2026-06-30.pdf"
+  },
+  "Emerging ESG": {
+    "isin": "FR0013412020",
+    "ticker": "PAEEM.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0013412020",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "Taiwan": 26.25,
+      "South Korea": 23.34,
+      "China": 20.46,
+      "India": 10.65,
+      "Brazil": 3.78,
+      "South Africa": 3.44,
+      "Saudi Arabia": 2.08,
+      "Malaysia": 1.76,
+      "Mexico": 1.69,
+      "UAE": 1.24,
+      "Thailand": 1.08,
+      "Poland": 1.04,
+      "Greece": 0.51,
+      "Other": 2.68
+    },
+    "sector": {
+      "Tech": 43.34,
+      "Financials": 18.57,
+      "Consumer Disc.": 9.17,
+      "Industrials": 6.34,
+      "Communication": 5.86,
+      "Materials": 5.28,
+      "Consumer Staples": 3.74,
+      "Energy": 3.11,
+      "Healthcare": 2.14,
+      "Real Estate": 1.24,
+      "Utilities": 1.21
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/481fa520418504d02ea39b6cf76f7fd4_445305/MR_FR_fr_FR0013412020_RES_2026-05-31.pdf"
+  },
+  "AAPL": {
+    "isin": "",
+    "ticker": "AAPL",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-01",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Technology": 100.0
+    },
+    "last_auto_refresh": "2026-06-01",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "Apple": {
+    "isin": "",
+    "ticker": "AAPL",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-01",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Technology": 100.0
+    },
+    "last_auto_refresh": "2026-06-01",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "COCA": {
+    "isin": "",
+    "ticker": "KO",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-01",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Consumer Defensive": 100.0
+    },
+    "last_auto_refresh": "2026-06-01",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "Nvidia": {
+    "isin": "",
+    "ticker": "NVDA",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-02",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Technology": 100.0
+    },
+    "last_auto_refresh": "2026-06-02",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "Coca": {
+    "isin": "",
+    "ticker": "KO",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-02",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Consumer Defensive": 100.0
+    },
+    "last_auto_refresh": "2026-06-02",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "Catterpilar": {
+    "isin": "",
+    "ticker": "CAT",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-03",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Industrials": 100.0
+    },
+    "last_auto_refresh": "2026-06-03",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "CAT": {
+    "isin": "",
+    "ticker": "CAT",
+    "issuer": "—",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=",
+    "last_verified": "2026-06-03",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Industrials": 100.0
+    },
+    "last_auto_refresh": "2026-06-03",
+    "last_auto_refresh_source": "yfinance.info (stock)"
+  },
+  "SpaceX": {
+    "isin": "",
+    "ticker": "",
+    "issuer": "—",
+    "factsheet_url": "",
+    "last_verified": "2026-06-23",
+    "geo": {
+      "United States": 100.0
+    },
+    "sector": {
+      "Industrials": 100.0
+    },
+    "last_auto_refresh": "2026-06-23",
+    "last_auto_refresh_source": "manual (private company)"
+  },
+  "Emerging Asia ESG": {
+    "isin": "FR0013412012",
+    "ticker": "PAASI.PA",
+    "issuer": "Amundi",
+    "factsheet_url": "https://www.justetf.com/fr/etf-profile.html?isin=FR0013412012",
+    "last_verified": "2026-07-21",
+    "geo": {
+      "Taiwan": 33.13,
+      "South Korea": 28.01,
+      "China": 24.73,
+      "India": 10.76,
+      "Thailand": 1.27,
+      "Malaysia": 1.1,
+      "Indonesia": 0.66,
+      "Other": 0.34
+    },
+    "sector": {
+      "Tech": 53.7,
+      "Financials": 13.66,
+      "Consumer Disc.": 9.73,
+      "Industrials": 6.6,
+      "Communication": 6.46,
+      "Healthcare": 2.77,
+      "Materials": 2.03,
+      "Consumer Staples": 1.85,
+      "Energy": 1.82,
+      "Utilities": 0.69,
+      "Real Estate": 0.69
+    },
+    "last_auto_refresh": "2026-07-21",
+    "last_auto_refresh_source": "official factsheet (fundinfo)",
+    "source_pdf": "https://api.fundinfo.com/document/fdac9ccd7c612114d84c1bfa70f05c85_440859/MR_FR_fr_FR0013412012_RES_2026-05-31.pdf"
+  },
+  "_meta": {
+    "format_version": 1,
+    "description": "Sector and geographic breakdowns for each ETF in the GPCP portfolio. Used by the Pro > Sector / Geo Exposure sub-tab. These numbers are AUTO-SCRAPED on the 15th of each month by monthly_compositions_update.py, which downloads each fund's official month-end factsheet PDF (Amundi/BNP via fundinfo, discovered through justETF) and parses the sector + country tables. IBEX has no monthly factsheet on fundinfo, so its sector data falls back to yfinance (geo stays manual = Spain 100%). The dashboard then weights each ETF by its current portfolio value automatically. last_auto_refresh / last_auto_refresh_source / source_pdf record provenance. To force a refresh now: .venv/bin/python monthly_compositions_update.py",
+    "source": "Official issuer factsheets (Amundi, BNP Paribas) via api.fundinfo.com; IBEX sector via yfinance",
+    "monthly_refresh_day": 15
+  }
+}
