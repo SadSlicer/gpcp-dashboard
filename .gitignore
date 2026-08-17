@@ -1,0 +1,48 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+
+# Logs (cron + server)
+*.log
+daily_update.stdout.log
+daily_update.stderr.log
+server.stdout.log
+server.stderr.log
+
+# Runtime artifacts (regenerated on demand)
+reports/
+
+# ============================================================
+# SAAS — never push personal portfolio data to public GitHub
+# ============================================================
+# Personal portfolio sqlite DBs and registry — stay LOCAL ONLY.
+# On the saas branch the production data lives in Supabase Postgres;
+# these sqlite files are only used by the va branch (pure local mode).
+portfolios/*.db
+portfolios/_registry.json
+# Original Excel workbooks — REAL personal financial data. Only used to seed
+# the local sqlite (never read in cloud mode). MUST NOT reach a public repo.
+*.xlsm
+*.xlsx
+# Personal notes / handoff docs — keep out of the public repo.
+*.docx
+# Streamlit Cloud secrets (never commit)
+.streamlit/secrets.toml
+# Local env vars for testing
+.env
+
+# Node (motion library, future Next.js work)
+node_modules/
+.npm/
+package-lock.json
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
