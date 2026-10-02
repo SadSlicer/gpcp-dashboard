@@ -1,0 +1,29 @@
+# PINNED: Streamlit Cloud reinstalls the latest matching version on every
+# reboot/deploy. A newer Streamlit changed the tabs DOM, which broke the custom
+# tab CSS (tiny tabs) and stopped hiding inactive tab panels (pages overlapping).
+# Pin to the version the UI was built + validated against so the layout is stable.
+streamlit==1.57.0
+# yfinance / curl_cffi REMOVED on purpose: curl_cffi (yfinance's native HTTP
+# backend) segfaults on Streamlit Cloud's container — uncatchable, it crashed the
+# whole app at startup. We now fetch Yahoo's public JSON API directly with
+# `requests` (prices.py: v8 chart + v10 quoteSummary, cookie+crumb primed), a
+# pure-Python client that can never segfault. Do NOT re-add yfinance/curl_cffi.
+requests>=2.31
+plotly>=5.20
+openpyxl>=3.1
+# PINNED native (C/C++) libs. Left unpinned, every Cloud rebuild reinstalls the
+# LATEST wheel — and a bleeding-edge Linux wheel can be unstable and SEGFAULT the
+# app during render (numpy/pandas math, pyarrow DataFrame serialization). That
+# made every redeploy a lottery: identical code, works one build, crashes the
+# next. Pin to mature, battle-tested versions so the build is DETERMINISTIC.
+numpy==2.1.3
+pandas==2.2.3
+pyarrow==17.0.0
+pdfplumber>=0.10        # ETF factsheet parsing (compositions_scraper)
+reportlab>=4.0          # monthly PDF report (pro._generate_pdf_report)
+
+# SAAS deployment (Streamlit Cloud + Supabase)
+supabase>=2.5
+psycopg2-binary>=2.9
+bcrypt>=4.1
+python-dotenv>=1.0

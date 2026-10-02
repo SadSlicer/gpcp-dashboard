@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd job #2 — keeps the Streamlit dashboard server running.
+
+  Behavior:
+    * RunAtLoad=true       → starts as soon as you log in (or `launchctl load`)
+    * KeepAlive=true       → if streamlit crashes or is killed, launchd respawns it
+    * ThrottleInterval=10  → wait at least 10 s between respawns (avoid hot loop)
+
+  Installed to ~/Library/LaunchAgents/com.gpcp.dashboard.server.plist
+  by install_launchd.sh — that script substitutes %ROOT% with the
+  absolute path to this dashboard directory.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gpcp.dashboard.server</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>%ROOT%/.venv/bin/streamlit</string>
+        <string>run</string>
+        <string>%ROOT%/app.py</string>
+        <string>--server.headless</string>
+        <string>true</string>
+        <string>--server.port</string>
+        <string>8501</string>
+        <string>--server.address</string>
+        <string>0.0.0.0</string>
+        <string>--browser.gatherUsageStats</string>
+        <string>false</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>%ROOT%</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>%ROOT%/server.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>%ROOT%/server.stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>TZ</key>
+        <string>Europe/Paris</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>
